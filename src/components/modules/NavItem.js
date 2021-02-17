@@ -1,26 +1,15 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 
 export default function NavItem(props) {
-
-  const navItem = useRef(null);
-  const navItemHoverBar = useRef(null);
   const [hoverBar, setHoverBar] = useState("nav-item-hover");
 
-  const enterNavItem = () => {
-    if (navItemHoverBar.current !== null) {
-      setHoverBar(`nav-item-hover on-enter`);
-    }
-  }
-  const exitNavItem = () => {
-    if (navItemHoverBar.current !== null) {
-      setHoverBar(`nav-item-hover on-exit`);
-    }
-  }
-
   return (
-    <a href={props.link} ref={navItem} onMouseEnter={enterNavItem} onMouseLeave={exitNavItem}>
+    <a 
+      href={props.link} 
+      onMouseEnter={() => setHoverBar(`nav-item-hover on-enter`)} 
+      onMouseLeave={() => setHoverBar(`nav-item-hover on-exit`)}>
       <div className="nav-item-hover-wrap">
-        <div className={hoverBar} ref={navItemHoverBar}/>
+        <div className={hoverBar}/>
       </div>
       <div className="text">
         {props.name}

@@ -1,4 +1,4 @@
-nav
+.nav-web
   margin-left: auto;
   display: flex;
   justify-content: center;
@@ -25,3 +25,24 @@ nav
         animation: widthGrow .2s forwards;
       .on-exit
         animation: widthShrink .2s;
+.nav-mobile
+  display: none;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: auto;
+  svg
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+@media screen and ( max-width: 1100px  )
+  .nav-web
+    a
+      margin-right: 20px;
+  
+@media screen and ( max-width: 765px ) 
+  .nav-web
+    display: none;
+  .nav-mobile
+    display: flex;
+
+  
