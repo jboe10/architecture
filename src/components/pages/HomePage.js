@@ -3,6 +3,7 @@ import Header from '../layout/Header'
 import Footer from '../layout/Footer'
 import Hero from '../modules/HomePage/Hero'
 import RecentProjects from '../modules/HomePage/RecentProjects'
+import ContactPageBanner from '../modules/ContactPageBanner'
 
 
 export default function HomePage() {
@@ -11,6 +12,7 @@ export default function HomePage() {
       <Header/>
       <Hero/>
       <RecentProjects/>
+      <ContactPageBanner/>
       <Footer/>
     </div>
   )

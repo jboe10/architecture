@@ -1,21 +1,51 @@
 .hero
   display: grid;
   grid-template-columns: 5% 95%;
-  grid-template-rows: 3fr  1fr;
+  grid-template-rows: 1fr 3fr  1fr;
   height: 750px;
   width: 100%;
+  .top-gray
+    background-color: $headerFooterColor;
+    grid-column: 1 / 3;
   .gray-bar
     grid-column: 1;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
     background-color: $headerFooterColor;
   .white-bar
     grid-column: 1;
-    grid-row: 0 / 1;
-    background-color: white;
+    grid-row: 1 / 2;
+    background-color: $headerFooterColor;
+
   .hero-pic
+    padding-left: 4%;
+    padding-top: 170px;
+    color: white;
+    font-size: 18px;
     grid-column: 2;
-    grid-row: 1 / 3;
+    grid-row: 2 / 4;
     background-color: $callToActionColor;
+    h3
+      padding-left: 55px;
+      margin-top: 0;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      font-size: 40px;
+    .bar-blurb
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      .bar
+        margin-top: 12px;
+        width: 40px
+        height: 6px;
+        background-color: white;
+      p
+        margin-left: 15px;
+        margin-top: 0;
+        font-size: 20px;
+        line-height: 30px;
+    span
+      padding-left: 55px;
 @media screen and ( max-width: 765px ) 
   .hero
     grid-template-columns: 100%;
