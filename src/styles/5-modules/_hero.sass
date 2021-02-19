@@ -1,15 +1,13 @@
 .hero
   display: grid;
   grid-template-columns: 5% 95%;
-  grid-template-rows: 1fr 3fr  1fr;
-  height: 750px;
+  grid-template-rows: 2fr  1fr;
+  height: 600px;
   width: 100%;
-  .top-gray
-    background-color: $headerFooterColor;
-    grid-column: 1 / 3;
+ 
   .gray-bar
     grid-column: 1;
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
     background-color: $headerFooterColor;
   .white-bar
     grid-column: 1;
@@ -22,7 +20,7 @@
     color: white;
     font-size: 18px;
     grid-column: 2;
-    grid-row: 2 / 4;
+    grid-row: 1 / 3;
     background-color: $callToActionColor;
     h3
       padding-left: 55px;

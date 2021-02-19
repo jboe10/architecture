@@ -9,7 +9,9 @@ import ContactPageBanner from '../modules/ContactPageBanner'
 export default function HomePage() {
   return (
     <div className="home-page">
-      <Header/>
+      <Header
+        color=""
+      />
       <Hero/>
       <RecentProjects/>
       <ContactPageBanner/>

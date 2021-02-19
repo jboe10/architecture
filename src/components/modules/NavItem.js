@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
+const white = "white";
+const textBlack = "text-black";
+const textWhite = "text-white";
 export default function NavItem(props) {
   const [hoverBar, setHoverBar] = useState("nav-item-hover");
-
+  const textClass = (props.headerColor === white)? textBlack : textWhite;
   return (
     <a 
       href={props.link} 
@@ -11,7 +14,7 @@ export default function NavItem(props) {
       <div className="nav-item-hover-wrap">
         <div className={hoverBar}/>
       </div>
-      <div className="text">
+      <div className={textClass}>
         {props.name}
       </div>
     </a>

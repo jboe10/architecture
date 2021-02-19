@@ -11,6 +11,10 @@
     justify-content: center;
     align-items: center;
     line-height: 20px;
+    .text-white
+      color: white;
+    .text-black
+      color: $headerFooterColor;
     .nav-item-hover-wrap
       margin-top: 2px;
       height: 4px;
@@ -31,9 +35,14 @@
   margin-right: 20px;
   margin-left: auto;
   svg
-    color: white;
     font-size: 30px;
     font-weight: 200;
+.mobile-white
+  svg
+    color: white;
+.mobile-black
+  svg 
+    color: $headerFooterColor;
 @media screen and ( max-width: 1100px  )
   .nav-web
     a

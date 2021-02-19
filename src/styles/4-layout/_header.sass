@@ -1,15 +1,29 @@
 header 
-  background-color: $headerFooterColor
   display: flex;
+  align-items: center;
   position: fixed;
   width: 100%;
   z-index: 10;
+  height: $headerHeight;
   img 
     width: 84px;
     height: 102px;
     margin-left: 5%;
-    margin-top: 25px;
-    margin-bottom: 25px;
+.header-space-bar
+  width: 100%;
+  height: $headerHeight;
+  
+.white-header
+  background-color: white;
+  color: $headerFooterColor;
+  .header-space-bar
+    background-color: white;
+.black-header
+  background-color: $headerFooterColor;
+  color: white;
+  .header-space-bar
+    background-color: $headerFooterColor;
+
 .header-scroll-up
   opacity: 100%;
   transition: opacity 1s;
