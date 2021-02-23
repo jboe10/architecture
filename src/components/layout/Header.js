@@ -2,6 +2,7 @@ import React , { useEffect, useRef, useState }from 'react';
 import logoRegular from '../../images/logo.png';
 import logoWhite from '../../images/logo-white.png';
 import Navigation from '../modules/Navigation';
+import HeaderMobile from './HeaderMobile';
 
 const white = "white";
 const whiteHeader = "white-header";
@@ -58,6 +59,7 @@ export default function Header(props) {
         />
       </header>
       <div className={headerSpaceBarClass}/>
+      <HeaderMobile/>
     </>
   )
 }
