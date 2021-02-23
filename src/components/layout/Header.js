@@ -8,12 +8,16 @@ const whiteHeader = "white-header";
 const blackHeader = "black-header"
 const hsu = "header-scroll-up";
 const hsd = "header-scroll-down";
+const hsbBlack = "header-space-bar-black";
+const hsbWhite = "header-space-bar-white";
 
 export default function Header(props) {
   const scrollUpClassName = (props.color === white)? `${whiteHeader} ${hsu}`: `${blackHeader} ${hsu}`;
   const scrollDownClassName = (props.color === white)? `${whiteHeader} ${hsd}`: `${blackHeader} ${hsd}`
+  const headerSpaceBarClassName = (props.color === white)? `${hsbWhite}` : `${hsbBlack}`;
   const headerEle = useRef(null);
   const [ headerClass, setHeaderClass ] = useState("");
+  const [ headerSpaceBarClass, setHeaderSpaceBarClass ] = useState("");
   
   // Fades in/out header based on scroll up/down
   useEffect(() => {
@@ -30,7 +34,6 @@ export default function Header(props) {
         }
       }
       lastScrollPosition = currentPosition;
-      
     }
     
     window.addEventListener("scroll", headerOpacityDeterminer)
@@ -43,7 +46,8 @@ export default function Header(props) {
   // Resets colors on mount!
   useEffect(() => {
     setHeaderClass(scrollUpClassName)
-  }, [])
+    setHeaderSpaceBarClass(headerSpaceBarClassName);
+  }, [scrollUpClassName, headerSpaceBarClassName])
   
   return (
     <>
@@ -53,7 +57,7 @@ export default function Header(props) {
           headerColor={props.color}
         />
       </header>
-      <div className="header-space-bar"/>
+      <div className={headerSpaceBarClass}/>
     </>
   )
 }
