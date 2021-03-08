@@ -6,6 +6,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import ProjectPage from './components/pages/ProjectPage';
 
 function App() {
   return (
@@ -15,9 +16,13 @@ function App() {
           <Route path="/submit">
             <SubmitInfo/>
           </Route>
+          <Route path="/projects">
+            <ProjectPage/>
+          </Route>
           <Route path="/">
             <HomePage/>
           </Route>
+
         </Switch>
       </Router>
       </div>
