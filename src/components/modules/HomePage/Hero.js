@@ -7,19 +7,19 @@ export default function Hero() {
       <div className="gray-bar"/>
       <div className="hero-pic">
         <h3>
-          Interior<br/>
-          Architecture<br/>
-          Design
+          UI/UX<br/>
+          Back End<br/>
+          Dev Ops
         </h3>
         <div className="bar-blurb">
           <div className="bar"></div>
           <p>
-            Architecture and design create culture, culture<br/>
-            shapes values and values shapes the future
+            Software Engineer with Skills in Web Development.<br/>
+            Shaping My skills using working websites
           </p>
         </div>
         <span>
-          Welcome to Scenario!
+          Welcome to my Portfolio!
         </span>
       </div>
     </section>

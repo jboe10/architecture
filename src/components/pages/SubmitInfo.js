@@ -19,30 +19,30 @@ export default function SubmitInfo() {
       <div className="submit-info">
         <div className="contact-wrap">
           <div className="contact-info">
-            <h1>We'd love to hear from You</h1>
+            <h1>I'd Love to hear from you!</h1>
             <div className="contact-sub-header">
-              info@scenario.com
+              jdboe2018@gmail.com
             </div>
             <div className="contact-dump">
-              +47 22 93 12 50
+              Send Me an email if you wish to give me a call!
             </div>
             <p>
-              Contact us for questions about assignments,<br/>
+              Contact me for questions about my projects,<br/>
               career opportunities or anything else you may be wondering<br/>
               about!
             </p>
           </div>
           <div className="contact-info">
-            <h1>Want to join our team?</h1>
+            <h1>Location</h1>
             <div className="contact-sub-header">
-              Do you want to work with us?
+              Currently Located in
             </div>
             <div className="contact-dump">
-              jobb@scenario.com
+              Long Beach, Ca
             </div>
             <p>
-              AS Scenario Interior Architects MNIL,<br/>
-              Pilestredet 75c, Entrance 48, N-0354 Oslo, Norway
+              Will move to work location,<br/>
+              Also open to working remotely
             </p>
           </div>
         </div>

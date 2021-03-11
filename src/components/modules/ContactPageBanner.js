@@ -5,19 +5,21 @@ import React from 'react'
 export default function ContactPageBanner() {
   return (
     <section className="contact-page-banner-wrap">
-      <div className="contact-page-banner">
-        <p>
-          We are fearless, solution-oriented and have strong professional integrity. With humor 
-          and dynamic teamwork, we create designs of unique solutions tailored to your needs.
-        </p>
-        <div className="contact-page-arrow-link">
+      <a href="/projects">
+        <div className="contact-page-banner">
           <p>
-            Say HELLO to us in Scenario.<br/>
-            Let's talk about your project
+          Exercising my skills by recreating websites from sight,
+          On full pages or sections of websites.
           </p>
-          <FontAwesomeIcon icon={faArrowRight}/>
-        </div>      
-      </div>
+          <div className="contact-page-arrow-link">
+            <p>
+              Apps are hosted for free on Heroku,<br/>
+              so expect longer than average load time
+            </p>
+            <FontAwesomeIcon icon={faArrowRight}/>
+          </div>      
+        </div>
+      </a>
     </section>
   )
 }

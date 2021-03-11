@@ -13,11 +13,11 @@ export default function RecentProjectSection() {
             designer="Deichman Bjorvika"
             category="Office"
           />
-          <RecentProjectItem
+          {/* <RecentProjectItem
             image={img}
             designer="Deichman Bjorvika"
             category="Office"
-          />
+          /> */}
         </div>
         <div className="project-col-2">
           <RecentProjectItem
@@ -25,11 +25,11 @@ export default function RecentProjectSection() {
             designer="Deichman Bjorvika"
             category="Office"
           />
-            <RecentProjectItem
+            {/* <RecentProjectItem
             image={img}
             designer="Deichman Bjorvika"
             category="Office"
-          />
+          /> */}
         </div>
       </div>
     </section>

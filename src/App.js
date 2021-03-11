@@ -7,13 +7,17 @@ import {
   Route
 } from "react-router-dom";
 import ProjectPage from './components/pages/ProjectPage';
+import GamePage from './components/pages/GamePage';
 
 function App() {
   return (
       <div className="App">
       <Router>
         <Switch>
-          <Route path="/submit">
+          <Route path="/games">
+            <GamePage/>
+          </Route>
+          <Route path="/contact">
             <SubmitInfo/>
           </Route>
           <Route path="/projects">
@@ -22,7 +26,6 @@ function App() {
           <Route path="/">
             <HomePage/>
           </Route>
-
         </Switch>
       </Router>
       </div>

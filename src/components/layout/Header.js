@@ -1,10 +1,9 @@
 import React , { useEffect, useRef, useState }from 'react';
-import logoRegular from '../../images/logo.png';
-import logoWhite from '../../images/logo-white.png';
 import Navigation from '../modules/Navigation';
 import HeaderMobile from './HeaderMobile';
 
 const white = "white";
+const black = "#262728";
 const whiteHeader = "white-header";
 const blackHeader = "black-header"
 const hsu = "header-scroll-up";
@@ -53,14 +52,16 @@ export default function Header(props) {
   return (
     <>
       <header ref={headerEle} className={headerClass}>
-        <img src={(props.color === white)? logoWhite : logoRegular} width="100px" height="100px" alt="logo-header"/>
+        <a href="/">
+          <h1 style={{color: (props.color===white)? black : white}}>Portfolio</h1>
+        </a>
+        {/* <img src={(props.color === white)? logoWhite : logoRegular} width="100px" height="100px" alt="logo-header"/> */}
         <Navigation
           headerColor={props.color}
         />
       </header>
       <div className={headerSpaceBarClass}/>
       <HeaderMobile/>
-      {/* <HeaderMobileC/> */}
     </>
   )
 }

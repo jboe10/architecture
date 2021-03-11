@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import logoRegular from '../../images/logo.png';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,6 +13,7 @@ export default function HeaderMobile() {
   const [ hamburgerClass, setHamburgerClass ] = useState(d_block);
   const [ xClass, setXClass ] = useState(d_none)
   const [ mobileMenuClass, setMobileMenuClass ] = useState(navMobileMenu);
+  const mobileHeaderElement = useRef(null);
 
   const hamburgerClickHandle = () => {
     if (hamburgerClass === d_block) {
@@ -27,8 +28,8 @@ export default function HeaderMobile() {
   }
 
   return (
-    <>
-      <header className="header-mobile">
+    <div className="header-nav-mobile">
+      <header className="header-mobile" ref={mobileHeaderElement}>
         <div className="header-mobile-wrap">
           <img src={logoRegular} alt="logo-regular"/>
           <div 
@@ -40,11 +41,16 @@ export default function HeaderMobile() {
         </div>
       </header>
       <div className={mobileMenuClass}>
-        <h2>About Us</h2>
-        <h2>Projects</h2>
-        <h2>News</h2>
-        <h2>Submit</h2>
+        <a href="/projects">
+          <h2>Projects</h2>
+        </a>
+        <a href="/games">
+          <h2>Games</h2>
+        </a>
+        <a href="/contact">
+          <h2>Contact</h2>
+        </a>
       </div>
-    </>
+    </div>
   )
 }
