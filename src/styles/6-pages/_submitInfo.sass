@@ -3,10 +3,12 @@
   .contact-wrap
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
     padding-left: 15px;
     padding-right: 15px; 
     max-width: 1250px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-column-gap: 60px; 
     grid-template-columns: auto auto;
     .contact-info
@@ -19,7 +21,12 @@
       .contact-dump
         font-size: 20px;
         padding-bottom: 35px;
-        border-bottom: 2px solid black;
+      .border-top-wrap
+        display: flex;
+        p
+          margin-top: 0;
+          padding-top: 1em;
+          border-top: 2px solid black;
   .form-wrap
     background-color: #f0f2f4; 
     margin-right: 30%;

@@ -23,30 +23,36 @@ export default function SubmitInfo() {
             <div className="contact-sub-header">
               jdboe2018@gmail.com
             </div>
-            <div className="contact-dump">
-              Send Me an email if you wish to give me a call!
+            <div className="contact-dump-wrap">
+              <div className="contact-dump">
+                Send Me an email if you wish to give me a call!
+              </div>
             </div>
-            <p>
-              Contact me for questions about my projects,<br/>
-              career opportunities or anything else you may be wondering<br/>
-              about!
-            </p>
+            <div className="border-top-wrap">
+              <p>
+                Contact me for questions about my projects,<br/>
+                career opportunities or anything else you may be wondering<br/>
+                about!
+              </p>
+            </div>
           </div>
           <div className="contact-info">
             <h1>Location</h1>
             <div className="contact-sub-header">
               Currently Located in
             </div>
-            <div className="contact-dump">
-              Long Beach, Ca
+              <div className="contact-dump">
+                Long Beach, Ca
+              </div>
+            <div className="border-top-wrap">
+              <p>
+                Will move to work location,<br/>
+                Also open to working remotely
+              </p>
             </div>
-            <p>
-              Will move to work location,<br/>
-              Also open to working remotely
-            </p>
           </div>
         </div>
-        <div className="form-wrap">
+        {/* <div className="form-wrap">
           <form 
             onSubmit={handleSubmit}>
 
@@ -65,8 +71,8 @@ export default function SubmitInfo() {
             />
 
             <button type="submit">Submit</button>
-          </form>
-        </div>
+          </form> 
+        </div> */}
       </div>
       <ContactPageBanner/>
       <Footer/>

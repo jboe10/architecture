@@ -26,15 +26,11 @@
           margin-top: 0;
           margin-bottom: 50px;
   &:hover
-    // -webkit-box-shadow: 0px 0px 14px 8px rgba(0,0,0,1); 
-    // box-shadow: 0px 0px 14px 8px rgba(0,0,0,1);
-    // filter: grayscale(100%);
-    // transition: box-shadow 1s ease-in-out;
     .colored-rectangle
       left: 3%;
       top: -3%;
-      transition-duration: 1s;
   .colored-rectangle
+    transition: .4s ease-in-out;
     position: absolute
     left: 1%;
     top: -1%;
@@ -43,7 +39,19 @@
     background-color: rgba(red($orangeHighlight), green($orangeHighlight), blue($orangeHighlight), 0.7);
     z-index: -1;
   
+@media screen and ( max-width: 1300px )
+  .recent-project-wrap  
+    .recent-project-item
+      height: 600px;
+
+@media screen and ( max-width: 700px )
+  .recent-project-wrap  
+    .recent-project-item
+      height: 500px;
+      .designer-info-wrap
+        .designer-info
+          h3 
+            font-size: 20px;
 
 
-
-      
+        
