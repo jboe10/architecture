@@ -1,25 +1,29 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
   return (
     <footer>
       <div className="footer-wrap">
         <div className="footer-sub">
-          <h4>Copyright</h4>
-          <div>2021 As Scenario</div>
-          <div>Privacy</div>
-        </div>
-        <div className="footer-sub">
           <h4>Contact</h4>
           <ul>
-            <li>AS Scenario Interior Design</li>
-            <li>MNIL</li>
-            <li>+41 22 93 12 50</li>
-            <li>info@scenario.na</li>
+            <li>Jonathan Boe</li>
+            <li>Email me for inquiries!</li>
+            <li>@jdboe2018@gmail.com</li>
           </ul>
         </div>
         <div className="footer-sub">
-          <h4>Follow Us</h4>
+          <h4>Socials</h4>
+          <div className="footer-socials">
+            <a href="https://www.linkedin.com/in/jonathan-d-boe/">
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </a>
+            <a href="https://github.com/jboe10">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,14 +1,26 @@
-.project-page-project
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  .project-pic
-    height: 500px;
-    width: auto;
-    background-size: cover;
-  h3
-    border-bottom: 1px solid black;
-    padding-bottom: 30px;
-    margin-bottom: 0;
-  h5
-    
+.project-page-project-wrap
+  a
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    .project-page-project
+      .project-pic
+        -webkit-box-shadow: 0px 0px 14px 8px rgba(0,0,0,.3); 
+        box-shadow: 0px 0px 14px 8px rgba(0,0,0,.3);
+        height: 500px;
+        width: 500px;
+        max-width: 500px;
+        background-size: cover;
+        transition: .5s ease-in-out;
+        &:hover
+          transform: scale(1.1);
+        &::mouse
+      h3
+        border-bottom: 1px solid black;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+      h5
+
+

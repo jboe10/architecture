@@ -1,35 +1,47 @@
 import React from 'react'
 import Header from '../layout/Header'
 import Footer from '../layout/Footer'
-import image from '../../images/projectImage1.jpeg';
+import surfline from '../../images/surflineSmall.png';
+import cuberto from '../../images/cuberto.png';
+import cultish from '../../images/cultishSmall.png';
+import git from '../../images/git.svg';
+
 import ProjectPageProject from '../modules/ProjectPage/ProjectPageProject';
 
 
 export default function ProjectPage() {
   return (
-    <div className="project-page">
+    <>
       <Header/>
-      <div className="project-page-projects">
-        <ProjectPageProject
-          image={image}
-          name="Project One"
-          tech="React, SASS, Heroku, HTML5, NodeJs"
-          number="1"
-        />
-        <ProjectPageProject
-          image={image}
-          name="Project One"
-          tech="React, SASS, Heroku, HTML5, NodeJs"
-          number="2"
-        />
-        <ProjectPageProject
-          image={image}
-          name="Project One"
-          tech="React, SASS, Heroku, HTML5, NodeJs"
-          number="3"
-        />
+      <div className="project-page">
+        <div className="project-page-projects">
+          <ProjectPageProject
+            image={surfline}
+            name="Surfline"
+            tech="React, SASS, Heroku, HTML5, NodeJs"
+            address=""
+          />
+          <ProjectPageProject
+            image={cuberto}
+            name="Cuberto"
+            tech="React, SASS, Heroku, HTML5, NodeJs"
+            address=""
+          />
+          <ProjectPageProject
+            image={cultish}
+            name="Cultish"
+            tech="React, SASS, Heroku, HTML5, NodeJs"
+            address=""
+          />
+          <ProjectPageProject
+            image={git}
+            name="Git For Windows Page"
+            tech="React, SASS, Heroku, HTML5, NodeJs"
+            address=""
+          />
+        </div>
       </div>
       <Footer/>
-    </div>
+    </>
   )
 }
