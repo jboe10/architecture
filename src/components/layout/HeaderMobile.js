@@ -31,7 +31,9 @@ export default function HeaderMobile() {
     <div className="header-nav-mobile">
       <header className="header-mobile" ref={mobileHeaderElement}>
         <div className="header-mobile-wrap">
-          <img src={logoRegular} alt="logo-regular"/>
+          <a href="/">
+            <h1 style={{color: "white"}}>Portfolio</h1>
+          </a>
           <div 
             className="nav-mobile-icon"
             onClick={hamburgerClickHandle}>
@@ -43,9 +45,6 @@ export default function HeaderMobile() {
       <div className={mobileMenuClass}>
         <a href="/projects">
           <h2>Projects</h2>
-        </a>
-        <a href="/games">
-          <h2>Games</h2>
         </a>
         <a href="/contact">
           <h2>Contact</h2>

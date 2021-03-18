@@ -7,7 +7,6 @@ export default function Navigation(props) {
     <>
       <nav className="nav-web">
         <NavItem link="/projects" name="Projects" headerColor={props.headerColor} />
-        {/* <NavItem link="/games" name="Games" headerColor={props.headerColor} /> */}
         <NavItem link="/contact" name="Contact" headerColor={props.headerColor} />
       </nav>
     </>
