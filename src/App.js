@@ -1,6 +1,6 @@
 import HomePage from './components/pages/HomePage';
 import './styles/main.sass';
-import SubmitInfo from './components/pages/SubmitInfo';
+import ContactInfo from './components/pages/ContactInfo';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,11 +14,11 @@ function App() {
       <div className="App">
       <Router>
         <Switch>
-          <Route path="/games">
+          {/* <Route path="/games">
             <GamePage/>
-          </Route>
+          </Route> */}
           <Route path="/contact">
-            <SubmitInfo/>
+            <ContactInfo/>
           </Route>
           <Route path="/projects">
             <ProjectPage/>

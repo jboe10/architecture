@@ -14,31 +14,35 @@ export default function ProjectPage() {
     <>
       <Header/>
       <div className="project-page">
-        <div className="project-page-projects">
-          <ProjectPageProject
-            image={surfline}
-            name="Surfline"
-            tech="React, SASS, Heroku, HTML5, NodeJs"
-            address=""
-          />
-          <ProjectPageProject
-            image={cuberto}
-            name="Cuberto"
-            tech="React, SASS, Heroku, HTML5, NodeJs"
-            address=""
-          />
-          <ProjectPageProject
-            image={cultish}
-            name="Cultish"
-            tech="React, SASS, Heroku, HTML5, NodeJs"
-            address=""
-          />
-          <ProjectPageProject
-            image={git}
-            name="Git For Windows Page"
-            tech="React, SASS, Heroku, HTML5, NodeJs"
-            address=""
-          />
+        <div className="project-page-wrap">
+          <h1>Projects</h1>
+          <div className="project-page-projects">
+            <ProjectPageProject
+              image={surfline}
+              name="Surfline"
+              tech="React, SASS, Heroku, HTML5, NodeJs"
+              address=""
+            />
+            <ProjectPageProject
+              image={cuberto}
+              name="Cuberto"
+              tech="React, SASS, Heroku, HTML5, NodeJs"
+              address=""
+            />
+            <ProjectPageProject
+              image={cultish}
+              name="Cultish"
+              tech="React, SASS, Heroku, HTML5, NodeJs"
+              address=""
+            />
+            <ProjectPageProject
+              image={git}
+              name="Git For Windows Page"
+              tech="React, SASS, Heroku, HTML5, NodeJs"
+              address=""
+            />
+          </div>
+
         </div>
       </div>
       <Footer/>

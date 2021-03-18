@@ -16,7 +16,7 @@ export default function SubmitInfo() {
       <Header
         color="white"
       />
-      <div className="submit-info">
+      <div className="contact-info-page">
         <div className="contact-wrap">
           <div className="contact-info">
             <h1>I'd Love to hear from you!</h1>
@@ -36,7 +36,7 @@ export default function SubmitInfo() {
               </p>
             </div>
           </div>
-          <div className="contact-info">
+          <div className="contact-info location">
             <h1>Location</h1>
             <div className="contact-sub-header">
               Currently Located in
