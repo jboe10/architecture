@@ -1,55 +1,58 @@
 .recent-project-wrap  
   position: relative;
-  .recent-project-item
-    height: 600px;
-    width: auto;
-    margin-bottom: 40px;
-    background-size: cover;
-    .designer-info-wrap
-      display: flex;
-      margin-top: auto;
-      height: 100%;
-      position: relative;
-      .designer-info
-        padding-left: 30px;
-        position: absolute;
-        bottom: 0;
-        background-color: white;
-        width: 60%;
-        h5 
-          font-size: 20px;
-          font-weight: 400;
-          margin-top: 20px;
-          margin-bottom: 10px;
-        h3 
-          font-size: 25px
-          margin-top: 0;
-          margin-bottom: 50px;
-  &:hover
-    .colored-rectangle
-      left: 3%;
-      top: -3%;
-  .colored-rectangle
-    transition: .4s ease-in-out;
-    position: absolute
-    left: 1%;
-    top: -1%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(red($orangeHighlight), green($orangeHighlight), blue($orangeHighlight), 0.7);
-    z-index: -1;
-@media screen and ( max-width: 1300px )
-  .recent-project-wrap  
+  a
     .recent-project-item
-      height: 500px;
-@media screen and ( max-width: 700px )
-  .recent-project-wrap  
-    .recent-project-item
-      height: 400px;
+      height: 600px;
+      width: auto;
+      margin-bottom: 40px;
+      background-size: cover;
       .designer-info-wrap
+        display: flex;
+        margin-top: auto;
+        height: 100%;
+        position: relative;
         .designer-info
-          h3 
+          padding-left: 30px;
+          position: absolute;
+          bottom: 0;
+          background-color: white;
+          width: 60%;
+          h5 
             font-size: 20px;
+            font-weight: 400;
+            margin-top: 20px;
+            margin-bottom: 10px;
+          h3 
+            font-size: 25px
+            margin-top: 0;
+            margin-bottom: 50px;
+    &:hover
+      .colored-rectangle
+        left: 3%;
+        top: -3%;
+    .colored-rectangle
+      transition: .4s ease-in-out;
+      position: absolute
+      left: 1%;
+      top: -1%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(red($orangeHighlight), green($orangeHighlight), blue($orangeHighlight), 0.7);
+      z-index: -1;
+@media screen and ( max-width: 1300px )
+  .recent-project-wrap
+    a  
+      .recent-project-item
+        height: 500px;
+@media screen and ( max-width: 700px )
+  .recent-project-wrap
+    a  
+      .recent-project-item
+        height: 400px;
+        .designer-info-wrap
+          .designer-info
+            h3 
+              font-size: 20px;
 
 
         

@@ -21,7 +21,7 @@ export default function ProjectPage() {
               image={surfline}
               name="Surfline"
               tech="React, SASS, Heroku, HTML5, NodeJs"
-              address=""
+              address="https://stormy-thicket-96949.herokuapp.com/"
             />
             <ProjectPageProject
               image={cuberto}
@@ -33,13 +33,13 @@ export default function ProjectPage() {
               image={cultish}
               name="Cultish"
               tech="React, SASS, Heroku, HTML5, NodeJs"
-              address=""
+              address="https://secret-river-01127.herokuapp.com/"
             />
             <ProjectPageProject
               image={git}
               name="Git For Windows Page"
               tech="React, SASS, Heroku, HTML5, NodeJs"
-              address=""
+              address="https://gitwindows.herokuapp.com/"
             />
           </div>
 
