@@ -27,12 +27,10 @@ export default function Header(props) {
       if (currentPosition > lastScrollPosition) {
         if (headerClass !== scrollDownClassName) {
           setHeaderClass(scrollDownClassName);
-          console.log("scroll Down")
         }
       } else {
         if (headerEle !== null && headerClass !== scrollUpClassName) {
           setHeaderClass(scrollUpClassName);
-          console.log("scroll up")
         }
       }
       lastScrollPosition = currentPosition;
