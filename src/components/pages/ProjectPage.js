@@ -27,7 +27,7 @@ export default function ProjectPage() {
               image={cuberto}
               name="Cuberto"
               tech="React, SASS, Heroku, HTML5, NodeJs"
-              address=""
+              address="https://cuberto11.herokuapp.com/"
             />
             <ProjectPageProject
               image={cultish}

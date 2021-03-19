@@ -27,7 +27,7 @@ export default function RecentProjectSection() {
             image={cuberto}
             category="Cuberto"
             designer="Front/DevOps"
-            address=""
+            address="https://cuberto11.herokuapp.com/"
           />
         </div>
       </div>
