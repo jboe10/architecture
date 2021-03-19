@@ -15,13 +15,13 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer-sub">
-          <h4>Socials</h4>
           <div className="footer-socials">
+            <h4>Socials</h4>
             <a href="https://www.linkedin.com/in/jonathan-d-boe/">
-              <FontAwesomeIcon icon={faLinkedinIn} />
+              Linked In
             </a>
             <a href="https://github.com/jboe10">
-              <FontAwesomeIcon icon={faGithub} />
+              Git Hub
             </a>
           </div>
         </div>
