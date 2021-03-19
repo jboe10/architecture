@@ -2,14 +2,14 @@ import React from 'react';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import ContactPageBanner from '../modules/ContactPageBanner';
-import useForm from '../utils/useForm';
+// import useForm from '../utils/useForm';
 
 
-export default function SubmitInfo() {
-  const submitHandler = e => {
-    console.log(values)
-  }
-  const [values, handleChange, handleSubmit] = useForm(submitHandler);
+export default function ContactInfo() {
+  // const submitHandler = e => {
+  //   console.log(values)
+  // }
+  // const [values, handleChange, handleSubmit] = useForm(submitHandler);
 
   return (
     <>

@@ -7,7 +7,6 @@ import {
   Route
 } from "react-router-dom";
 import ProjectPage from './components/pages/ProjectPage';
-import GamePage from './components/pages/GamePage';
 
 function App() {
   return (
