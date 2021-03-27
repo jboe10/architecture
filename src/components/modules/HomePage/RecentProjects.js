@@ -8,11 +8,13 @@ export default function RecentProjectSection() {
   return (
     <section className="recent-projects">
       <div className="recent-projects-wrap">
-        <h3>
-          <a href="/projects">
-            Recent projects
-          </a>
-        </h3>
+        <div className="proj-item">
+          <h3>
+            <a href="/projects">
+              Recent projects
+            </a>
+          </h3>
+        </div>
         <div className="project-col-1">
           <RecentProjectItem
             image={surfline}
@@ -20,7 +22,6 @@ export default function RecentProjectSection() {
             designer="Front/Back/DevOps"
             address="https://stormy-thicket-96949.herokuapp.com/"
           />
-
         </div>
         <div className="project-col-2">
           <RecentProjectItem
