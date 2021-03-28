@@ -15,7 +15,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer-sub">
-          <div className="footer-socials">
+          <div className="footer-socialss">
             <h4>Socials</h4>
             <a href="https://www.linkedin.com/in/jonathan-d-boe/">
               Linked In
