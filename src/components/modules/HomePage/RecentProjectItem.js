@@ -3,7 +3,7 @@ import React from 'react'
 export default function RecentProjectItem(props) {
   return (
     <div className="recent-project-wrap">
-      <a href={props.address}>
+      <a href='/projects'>
         <div 
           style={{"backgroundImage": `url(${props.image})`}} 
           className="recent-project-item">

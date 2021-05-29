@@ -24,11 +24,25 @@
           font-weight: 200;
           color: white;
   .nav-mobile-menu
+    border-top: 1px solid white;
     display: none;
     background-color: $headerFooterColor;
     color: white;
     a 
+      background-color: gray;
       color: white;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid white;
+      border-left: 2px solid white;
+      border-right: 2px solid white;
+      &:hover
+        background-color: $headerFooterColor;
+        text-decoration: none;
+      h2
+        font-size: 2em;
+        padding: .5em 0;
+        margin: 0;
   .display-block
     display: block;
   .display-flex
@@ -47,4 +61,5 @@
       .header-mobile-wrap
         .nav-mobile-icon  
           display: flex;
+          justify-content: center;
 

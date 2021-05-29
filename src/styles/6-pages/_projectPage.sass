@@ -4,15 +4,20 @@
   flex-direction: column;
   justify-content: center;
   .project-page-wrap
-    margin: 3% 10% 3% 10%;
+    margin: 4% 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     h1
+      text-transform: uppercase;
       margin-top: 0;
-      margin-bottom: 5%;
+      margin-bottom: 4%;
     .project-page-projects
       margin-bottom: 0;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 3%;
+      grid-template-columns: 510px 510px 510px;
+      grid-gap: 30px
 @media screen and ( max-width: 1700px )
   .project-page
     .project-page-wrap
@@ -26,12 +31,17 @@
 @media screen and ( max-width: 700px )
   .project-page
     .project-page-wrap
+      margin: 10% 10%;
+      h1
+        margin-bottom: 10%;
       .project-page-projects
         margin-left: 5%;
         margin-right: 5%;
 @media screen and ( max-width: 550px )
   .project-page
     .project-page-wrap
+      h1
+        font-size: 2.2em;
       .project-page-projects
         margin-left: 2%;
         margin-right: 2%;
