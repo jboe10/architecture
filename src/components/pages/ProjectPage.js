@@ -8,6 +8,15 @@ import bloodMoon from '../../images/bloodMoon.jpg'
 import Alert from 'react-bootstrap/Alert'
 import ProjectPageProject from '../modules/ProjectPage/ProjectPageProject';
 
+const  react = "React";
+const  sass = "SASS";
+const  heroku = "Heroku";
+const  html = "HTML5";
+const  javaScript = "JavaScript";
+const  figma = "Figma";
+const  node = "Node.js";
+const  mg = "Mongoose";
+const  mongo = 'MongoDB';
 
 export default function ProjectPage() {
   const [ showAlert, setShowAlert ] = useState(true);
@@ -25,32 +34,32 @@ export default function ProjectPage() {
             <ProjectPageProject
              image={bloodMoon}
              name="Blood Moon Tie Dye"
-             tech="React, SASS, Heroku, HTML5, JavaScript, Figma"
+             tech={`${react}, ${sass}, ${heroku}, ${html}, ${javaScript}, ${figma}`}
              address="https://gitwindows.herokuapp.com/"
            />
             <ProjectPageProject
               image={surfline}
               name="Surfline"
-              tech="React, SASS, Heroku, HTML5, NodeJs"
+              tech={`${react}, ${sass}, ${heroku}, ${html}, ${node}, ${mongo}, ${mg}`}
               address="https://stormy-thicket-96949.herokuapp.com/"
             />
             <ProjectPageProject
               image={cuberto}
               name="Cuberto"
-              tech="React, SASS, Heroku, HTML5, NodeJs"
+              tech={`${react}, ${sass}, ${heroku}, ${html}, ${javaScript}`}
               address="https://cuberto11.herokuapp.com/"
             />
             <ProjectPageProject
               image={cultish}
               name="Cultish"
-              tech="React, SASS, Heroku, HTML5, NodeJs"
+              tech={`${react}, ${sass}, ${heroku}, ${html}, ${javaScript}`}
               address="https://secret-river-01127.herokuapp.com/"
             />
              <ProjectPageProject
               image={cultish}
               name="Cultish"
-              tech="React, SASS, Heroku, HTML5, NodeJs"
-              address="#"
+              tech={`${react}, ${sass}, ${heroku}, ${html}, ${javaScript}`}
+              address="/"
             />
           </div>
 
