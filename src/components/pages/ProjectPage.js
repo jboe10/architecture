@@ -59,7 +59,7 @@ export default function ProjectPage() {
               image={cultish}
               name="Cultish"
               tech={`${react}, ${sass}, ${heroku}, ${html}, ${javaScript}`}
-              address="/"
+              address="https://bloodredtiedye.herokuapp.com/"
             />
           </div>
 
