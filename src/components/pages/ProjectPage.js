@@ -32,12 +32,6 @@ export default function ProjectPage() {
           <h1>Projects</h1>
           <div className="project-page-projects">
             <ProjectPageProject
-             image={bloodMoon}
-             name="Blood Moon Tie Dye"
-             tech={`${react}, ${sass}, ${heroku}, ${html}, ${javaScript}, ${figma}`}
-             address="https://gitwindows.herokuapp.com/"
-           />
-            <ProjectPageProject
               image={surfline}
               name="Surfline"
               tech={`${react}, ${sass}, ${heroku}, ${html}, ${node}, ${mongo}, ${mg}`}
@@ -50,19 +44,18 @@ export default function ProjectPage() {
               address="https://cuberto11.herokuapp.com/"
             />
             <ProjectPageProject
+             image={bloodMoon}
+             name="Blood Moon Tie Dye"
+             tech={`${react}, ${sass}, ${heroku}, ${html}, ${javaScript}, ${figma}`}
+             address="https://bloodredtiedye.herokuapp.com/"
+           />
+            <ProjectPageProject
               image={cultish}
               name="Cultish"
               tech={`${react}, ${sass}, ${heroku}, ${html}, ${javaScript}`}
               address="https://secret-river-01127.herokuapp.com/"
             />
-             <ProjectPageProject
-              image={cultish}
-              name="Cultish"
-              tech={`${react}, ${sass}, ${heroku}, ${html}, ${javaScript}`}
-              address="https://bloodredtiedye.herokuapp.com/"
-            />
           </div>
-
         </div>
       </div>
       <Footer/>
