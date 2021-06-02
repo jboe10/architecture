@@ -2,14 +2,8 @@ import React from 'react';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import ContactPageBanner from '../modules/ContactPageBanner';
-// import useForm from '../utils/useForm';
-
 
 export default function ContactInfo() {
-  // const submitHandler = e => {
-  //   console.log(values)
-  // }
-  // const [values, handleChange, handleSubmit] = useForm(submitHandler);
 
   return (
     <>
@@ -52,27 +46,6 @@ export default function ContactInfo() {
             </div>
           </div>
         </div>
-        {/* <div className="form-wrap">
-          <form 
-            onSubmit={handleSubmit}>
-
-            <label>Name</label>
-            <input 
-              name="name"
-              value={values.name || ""}
-              onChange={handleChange}
-            />
-
-            <label>Email</label>
-            <input 
-              name="email"
-              value={values.email || ""}
-              onChange={handleChange}
-            />
-
-            <button type="submit">Submit</button>
-          </form> 
-        </div> */}
       </div>
       <ContactPageBanner/>
       <Footer/>

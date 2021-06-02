@@ -55,7 +55,6 @@ export default function Header(props) {
         <a href="/">
           <h1 style={{color: (props.color===white)? black : white}}>Portfolio</h1>
         </a>
-        {/* <img src={(props.color === white)? logoWhite : logoRegular} width="100px" height="100px" alt="logo-header"/> */}
         <Navigation
           headerColor={props.color}
         />

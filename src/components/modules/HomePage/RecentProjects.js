@@ -20,7 +20,6 @@ export default function RecentProjectSection() {
             image={surfline}
             category="Surfline"
             designer="Front/Back/DevOps"
-            address="https://stormy-thicket-96949.herokuapp.com/"
           />
         </div>
         <div className="project-col-2">
@@ -28,7 +27,6 @@ export default function RecentProjectSection() {
             image={cuberto}
             category="Cuberto"
             designer="Front/DevOps"
-            address="https://cuberto11.herokuapp.com/"
           />
         </div>
       </div>
