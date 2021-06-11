@@ -35,13 +35,21 @@
     padding-left: 2%;
     padding-right: 2%;
     .recent-projects-wrap
+      margin-bottom: 40px;
       .test-blue
         grid-row: 2 / 4;
 @media screen and ( max-width: 990px)
   .recent-projects
     padding-left: 5%;
     padding-right: 5%;
+    margin-top: 40px;
     .recent-projects-wrap
       display: flex;
       flex-direction: column;
-  
+      .proj-item 
+        h3 
+          margin-bottom: 0;
+@media screen and ( max-width: 550px )
+  .recent-projects
+    overflow: hidden;
+    padding: 0;
