@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
+import alwaysClosed from '../../images/alwaysClosed.png';
 import surfline from '../../images/surflineSmall.png';
 import cuberto from '../../images/cuberto.png';
-import cultish from '../../images/cultishSmall.png';
 import bloodMoon from '../../images/bloodMoon.jpg';
 import Alert from 'react-bootstrap/Alert';
 import ProjectPageProject from '../modules/ProjectPage/ProjectPageProject';
@@ -31,8 +31,7 @@ export default function ProjectPage() {
 				onClose={() => setShowAlert(false)}
 				dismissible
 			>
-				These Apps are hosted for free and make take some time
-				to load.
+				These Apps are hosted for free and make take some time to load.
 			</Alert>
 			<div className="project-page">
 				<div className="project-page-wrap">
@@ -57,10 +56,10 @@ export default function ProjectPage() {
 							address="https://bloodredtiedye.herokuapp.com/"
 						/>
 						<ProjectPageProject
-							image={cultish}
-							name="Cultish"
-							tech={`${react}, ${sass}, ${heroku}, ${html}, ${javaScript}`}
-							address="https://secret-river-01127.herokuapp.com/"
+							image={alwaysClosed}
+							name="Always Closed Tattoo Parlor"
+							tech={`${react}, ${sass}, ${heroku}, ${html}, ${javaScript} ${figma}`}
+							address="https://always-closed-tattoo.herokuapp.com/"
 						/>
 					</div>
 				</div>
