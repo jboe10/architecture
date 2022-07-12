@@ -1,65 +1,70 @@
 .header-nav-mobile
   display: none
   .header-mobile
-    display: none;
-    height: 100px;
-    background-color: $headerFooterColor;
-    position: relative;
+    display: none
+    height: 100px
+    background-color: $headerFooterColor
+    position: relative
     .header-mobile-wrap
-      display: flex;
-      width: 100%;
+      display: flex
+      width: 100%
       h1
-        height: 50px;
-        width: auto;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 3%;
+        height: 50px
+        width: auto
+        margin-top: 0
+        margin-bottom: 0
+        margin-left: 3%
       .nav-mobile-icon
-        display: none;
-        align-items: center;
-        margin-right: 20px;
-        margin-left: auto;
+        display: none
+        align-items: center
+        margin-right: 20px
+        margin-left: auto
         svg
-          font-size: 30px;
-          font-weight: 200;
-          color: white;
+          font-size: 30px
+          font-weight: 200
+          color: white
   .nav-mobile-menu
-    border-top: 1px solid white;
-    display: none;
-    background-color: $headerFooterColor;
-    color: white;
+    // border-top: 1px solid gray
+    border-radius: 4px
+    display: none
+    background-color: $headerFooterColor
+    color: white
+    box-shadow: 1px 10px 29px 5px rgba(0,0,0,0.75)
+    -webkit-box-shadow: 1px 10px 29px 5px rgba(0,0,0,0.75)
+    -moz-box-shadow: 1px 10px 29px 5px rgba(0,0,0,0.75)
     a 
-      background-color: gray;
-      color: white;
-      width: 100%;
-      text-align: center;
-      border-bottom: 1px solid white;
-      border-left: 1px solid white;
-      border-right: 1px solid white;
+      background-color: #5D666F
+      color: white
+      width: 100%
+      text-align: center
+    
+      // border-bottom: 1px solid gray
+      // border-left: 1px solid gray
+      // border-right: 1px solid gray
       &:hover
-        background-color: $headerFooterColor;
-        text-decoration: none;
+        background-color: $callToActionColor
+        text-decoration: none
       h2
-        font-size: 1.5em;
-        padding: .5em 0;
-        margin: 0;
+        font-size: 1.5rem
+        padding: .5em 0
+        margin: 0
   .display-block
-    display: block;
+    display: block
   .display-flex
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    height: 100%
+    justify-content: center
+    align-items: center
+    display: flex
+    flex-direction: column
   .display-none
-    display: none;
+    display: none
 @media screen and ( max-width: 765px ) 
   .header-nav-mobile
-    display: block;
+    display: block
     .header-mobile 
-      display: flex;
+      display: flex
       .header-mobile-wrap
         .nav-mobile-icon  
-          display: flex;
-          justify-content: center;
+          display: flex
+          justify-content: center
 

@@ -1,0 +1,5 @@
+$base-size: 16
+//Function to convert px value into rem
+@function toRem($value) 
+  $remValue: ($value / 16) + rem
+  @return $remValue
