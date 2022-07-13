@@ -1,7 +1,9 @@
 .recent-projects
-  margin-top: 9vw
+  font-family: poppins
+  margin-top: 300px
   margin-right: auto
   margin-left: auto
+  margin-bottom: 300px
   display: flex
   justify-content: center
   .recent-projects-wrap
@@ -16,10 +18,13 @@
       margin-bottom: 40px
       grid-column: 1 / 2
       grid-row: 1
-      font-size: 45px
+      font-size: toRem(45)
       color: $headerFooterColor
       display: flex
       justify-content: center
+      a 
+        -webkit-text-fill-color: transparent
+        -webkit-text-stroke-width: 1px
     .project-col-1
       grid-row: 2/3
       display: flex
@@ -51,5 +56,11 @@
           margin-bottom: 0
 @media screen and ( max-width: 550px )
   .recent-projects
+    margin: 100px 0
     overflow: hidden
     padding: 0
+    .recent-projects-wrap
+      .proj-item
+        h3
+          font-size: toRem(38)
+          margin-bottom: 45px
