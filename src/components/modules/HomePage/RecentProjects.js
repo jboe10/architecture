@@ -9,7 +9,9 @@ export default function RecentProjectSection() {
 			<div className="recent-projects-wrap">
 				<div className="proj-item">
 					<h3>
-						<a href="/projects">Recent projects</a>
+						<a href="/projects">
+							Recent <span>Projects</span>
+						</a>
 					</h3>
 				</div>
 				<div className="project-col-1">

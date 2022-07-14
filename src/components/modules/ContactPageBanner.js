@@ -7,19 +7,11 @@ export default function ContactPageBanner() {
 		<section className="contact-page-banner-wrap">
 			<a href="/projects">
 				<div className="contact-page-banner">
-					<p>
-						Exercising my skills by recreating websites
-						from sight, On full pages or sections of
-						websites.
-					</p>
 					<div className="contact-page-arrow-link">
 						<p>
-							Apps are hosted for free on Heroku,
-							<br />
-							so expect longer than average load
-							time
+							Take a look at the rest of my Projects
+							<FontAwesomeIcon icon={faArrowRight} />
 						</p>
-						<FontAwesomeIcon icon={faArrowRight} />
 					</div>
 				</div>
 			</a>
