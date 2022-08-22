@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { debounce } from '../../utils/Helpers';
 import Navigation from '../modules/Navigation';
 import HeaderMobile from './HeaderMobile';
 
@@ -13,13 +14,9 @@ const hsbWhite = 'header-space-bar-white';
 
 export default function Header(props) {
 	const scrollUpClassName =
-		props.color === white
-			? `${whiteHeader} ${hsu}`
-			: `${blackHeader} ${hsu}`;
+		props.color === white ? `${whiteHeader} ${hsu}` : `${blackHeader} ${hsu}`;
 	const scrollDownClassName =
-		props.color === white
-			? `${whiteHeader} ${hsd}`
-			: `${blackHeader} ${hsd}`;
+		props.color === white ? `${whiteHeader} ${hsd}` : `${blackHeader} ${hsd}`;
 	const headerSpaceBarClassName =
 		props.color === white ? `${hsbWhite}` : `${hsbBlack}`;
 	const headerEle = useRef(null);
@@ -27,29 +24,33 @@ export default function Header(props) {
 	const [headerSpaceBarClass, setHeaderSpaceBarClass] = useState('');
 
 	// Fades in/out header based on scroll up/down
+	let HitCount = 0;
+
 	useEffect(() => {
 		let lastScrollPosition = window.pageYOffset;
 		const headerOpacityDeterminer = () => {
+			console.log(HitCount);
 			const currentPosition = window.pageYOffset;
 			if (currentPosition > lastScrollPosition) {
 				if (headerClass !== scrollDownClassName) {
 					setHeaderClass(scrollDownClassName);
 				}
 			} else {
-				if (
-					headerEle !== null &&
-					headerClass !== scrollUpClassName
-				) {
+				if (headerEle !== null && headerClass !== scrollUpClassName) {
 					setHeaderClass(scrollUpClassName);
 				}
 			}
 			lastScrollPosition = currentPosition;
 		};
 
-		window.addEventListener('scroll', headerOpacityDeterminer);
+		window.addEventListener('scroll', () =>
+			debounce(headerOpacityDeterminer, 100)
+		);
 
 		return () => {
-			window.removeEventListener('scroll', headerOpacityDeterminer);
+			window.removeEventListener('scroll', () =>
+				debounce(headerOpacityDeterminer, 100)
+			);
 		};
 	}, [headerEle, headerClass, scrollUpClassName, scrollDownClassName]);
 
@@ -59,16 +60,15 @@ export default function Header(props) {
 		setHeaderSpaceBarClass(headerSpaceBarClassName);
 	}, [scrollUpClassName, headerSpaceBarClassName]);
 
+	HitCount += 1;
+	console.log(HitCount);
 	return (
 		<>
 			<header ref={headerEle} className={headerClass}>
 				<a href="/">
 					<h1
 						style={{
-							color:
-								props.color === white
-									? black
-									: white,
+							color: props.color === white ? black : white,
 						}}
 					>
 						Portfolio
