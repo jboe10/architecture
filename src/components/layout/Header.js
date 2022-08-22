@@ -24,12 +24,10 @@ export default function Header(props) {
 	const [headerSpaceBarClass, setHeaderSpaceBarClass] = useState('');
 
 	// Fades in/out header based on scroll up/down
-	let HitCount = 0;
 
 	useEffect(() => {
 		let lastScrollPosition = window.pageYOffset;
 		const headerOpacityDeterminer = () => {
-			console.log(HitCount);
 			const currentPosition = window.pageYOffset;
 			if (currentPosition > lastScrollPosition) {
 				if (headerClass !== scrollDownClassName) {
@@ -60,8 +58,6 @@ export default function Header(props) {
 		setHeaderSpaceBarClass(headerSpaceBarClassName);
 	}, [scrollUpClassName, headerSpaceBarClassName]);
 
-	HitCount += 1;
-	console.log(HitCount);
 	return (
 		<>
 			<header ref={headerEle} className={headerClass}>
