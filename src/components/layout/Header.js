@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { debounce } from '../../utils/Helpers';
+import { debounce } from '../utils/Helpers';
 import Navigation from '../modules/Navigation';
 import HeaderMobile from './HeaderMobile';
 
