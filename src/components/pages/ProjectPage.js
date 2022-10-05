@@ -41,25 +41,25 @@ export default function ProjectPage() {
 							image={surfline}
 							name="Surfline"
 							tech={`${react}, ${sass}, ${heroku}, ${html}, ${node}, ${mongo}, ${mg}`}
-							address="https://stormy-thicket-96949.herokuapp.com/"
+							address="https://surfline.d1fv70iy7n1uma.amplifyapp.com/"
 						/>
 						<ProjectPageProject
 							image={cuberto}
 							name="Cuberto"
 							tech={`${react}, ${sass}, ${heroku}, ${html}, ${javaScript}`}
-							address="https://cuberto11.herokuapp.com/"
+							address="https://cuberto.d2fawjc4lewxq1.amplifyapp.com/"
 						/>
 						<ProjectPageProject
 							image={bloodMoon}
 							name="Blood Moon Tie Dye"
 							tech={`${react}, ${sass}, ${heroku}, ${html}, ${javaScript}, ${figma}`}
-							address="https://bloodredtiedye.herokuapp.com/"
+							address="https://tie-dye.dr4lt3230agyr.amplifyapp.com/"
 						/>
 						<ProjectPageProject
 							image={alwaysClosed}
 							name="Always Closed Tattoo Parlor"
 							tech={`${react}, ${sass}, ${heroku}, ${html}, ${javaScript} ${figma}`}
-							address="https://always-closed-tattoo.herokuapp.com/"
+							address="https://always-closed.d1yae4t6md8dqg.amplifyapp.com/"
 						/>
 					</div>
 				</div>
