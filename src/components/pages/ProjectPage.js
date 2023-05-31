@@ -24,15 +24,6 @@ export default function ProjectPage() {
 	return (
 		<>
 			<Header />
-			<Alert
-				style={{ textAlign: 'center' }}
-				show={showAlert}
-				variant="danger"
-				onClose={() => setShowAlert(false)}
-				dismissible
-			>
-				These Apps are hosted for free and make take some time to load.
-			</Alert>
 			<div className="project-page">
 				<div className="project-page-wrap">
 					<h1>Projects</h1>
