@@ -5,6 +5,7 @@ export default function Hero() {
 		<section className="hero">
 			<div className="top-gray" />
 			<div className="gray-bar" />
+			<div className="top-triangle"></div>
 			<div className="hero-pic">
 				<h3>
 					UI/UX
@@ -16,14 +17,14 @@ export default function Hero() {
 				<div className="bar-blurb">
 					<div className="bar"></div>
 					<p>
-						Software Engineer with Skills in Web
-						Development.
+						Software Engineer with Skills in Web Development.
 						<br />
 						Shaping My skills using working websites
 					</p>
 				</div>
 				<span>Welcome to my Portfolio!</span>
 			</div>
+			<div className="bottom-triangle"></div>
 		</section>
 	);
 }
