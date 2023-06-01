@@ -3,8 +3,9 @@
   display: grid
   grid-template-columns: 5% 95%
   grid-template-rows: 2fr  1fr
-  height: 600px
+  height: 500px
   width: 100%
+  position: relative
   .gray-bar
     grid-column: 1
     grid-row: 1 / 2
@@ -13,7 +14,35 @@
     grid-column: 1
     grid-row: 1 / 2
     background-color: $headerFooterColor
-
+  .top-triangle
+    grid-column: 2
+    position: relative
+    background-color: transparent
+    z-index: 100
+    &::after
+      width: 0
+      height: 0
+      position: absolute
+      content: ''
+      top: -500px
+      left: 0
+      border-left: 100vw solid transparent
+      border-top: 180px solid $headerFooterColor
+      animation: slideInHero 3s ease
+  .bottom-triangle
+    grid-column: 2
+    position: relative
+    background-color: transparent
+    &::after
+      width: 0
+      height: 0
+      position: absolute
+      content: ''
+      top: 0
+      left: 0
+      border-left: 100vw solid transparent
+      border-top: 180px solid $callToActionColor
+      animation: slideInHero 3s ease
   .hero-pic
     overflow: hidden
     padding-left: 4%
@@ -24,6 +53,7 @@
     background-color: $callToActionColor
     color: white
     animation: slideInHero 3s ease
+    position: relative
     h3
       padding-left: 55px
       margin-top: 0
@@ -53,5 +83,9 @@
       display: none
     .white-bar
       display: none
+    .top-triangle
+      grid-column: 1
+    .bottom-triangle
+      grid-column: 1
     .hero-pic
       grid-column: 1
