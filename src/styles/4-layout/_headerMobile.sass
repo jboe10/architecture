@@ -33,16 +33,20 @@
     box-shadow: 1px 2px 11px 5px rgba(0,0,0,0.5)
     -webkit-box-shadow: 1px 2px 11px 5px rgba(0,0,0,0.5)
     -moz-box-shadow: 1px 2px 11px 5px rgba(0,0,0,0.5)
+    transition: all 2s ease
     a 
-      background-color: #5D666F
+      background-color: $orangeHighlight
       color: white
       width: 100%
       text-align: center
+      border: 1px solid gray
+      border-top: none
+      transition: all .5s ease
       &:hover
         background-color: $callToActionColor
         text-decoration: none
       h2
-        font-size: 1.5rem
+        font-size: 1.35rem
         padding: .5em 0
         margin: 0
   .display-block
