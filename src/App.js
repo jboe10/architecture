@@ -12,12 +12,8 @@ function App() {
 					{/* <Route path="/games">
             <GamePage/>
           </Route> */}
-					<Route path="/contact">
-						<ContactInfo />
-					</Route>
-					<Route path="/projects">
-						<ProjectPage />
-					</Route>
+					<Route path="/contact">{/* <ContactInfo />gi */}</Route>
+					<Route path="/projects">{/* <ProjectPage /> */}</Route>
 					<Route path="/">
 						<HomePage />
 					</Route>

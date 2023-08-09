@@ -9,7 +9,7 @@ export default function HomePage() {
 	return (
 		<div className="home-page">
 			<Header color="" />
-			<Hero />
+			{/* <Hero /> */}
 			<RecentProjects />
 			<ContactPageBanner />
 			<Footer />
